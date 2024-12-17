@@ -1,0 +1,18 @@
+<table border="1">
+<tr>
+{% for key in data_Statistics_table[0].keys() %}
+<td>{{ key }}</td>
+{% endfor %}
+</tr>
+{% for data in data_Statistics_table %}
+  <tr>
+    <td><font color="blue">{{ data['Age'] }}</font></td>
+    <td><font color="blue">{{ data['Bedtime'] }}</font></td>
+    <td><font color="blue">{{ data['Physical Activity Level'] }}</font></td>
+    <td><font color="blue">{{ data['Dietary Habits'] }}</font></td>
+    <td><font color="blue">{{ data['Sleep Disorders'] }}</font></td>
+    <td><font color="blue">{{ data['Medication Usage'] }}</font></td>
+    <td><font color="blue">{{ data['Sleep Duration'] }}</font></td>
+  </tr>
+{% endfor %}
+</table>
